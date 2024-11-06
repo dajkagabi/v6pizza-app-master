@@ -1,0 +1,36 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.aboutTop {
+  height: 50%; 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.aboutBottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  text-align: center;
+  flex-grow: 1; 
+}
+
+.aboutBottom h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.aboutBottom p {
+  font-size: 1.2em;
+  line-height: 1.5;
+  max-width: 800px;  
+  text-align: justify; 
+  color: #000; 
+}

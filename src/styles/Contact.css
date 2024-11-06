@@ -1,0 +1,105 @@
+.contact {
+  display: flex;
+  height: 100vh;
+  flex-direction: row;
+}
+
+.leftSide {
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+.rightSide {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #f4f4f4;
+  height: 100%;
+}
+
+.rightSide h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 600px; /* Ensure the form doesn't get too wide */
+  gap: 15px;
+}
+
+label {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
+
+input,
+textarea {
+  padding: 10px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+}
+
+textarea {
+  resize: vertical; /* Allow vertical resizing */
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #d10300;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.1em;
+  transition: background-color 0.3s;
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .contact {
+    flex-direction: column;
+  }
+
+  .leftSide,
+  .rightSide {
+    flex: none;
+    width: 100%;
+    height: 50vh; /* Set both sections to be 50% height on small screens */
+  }
+
+  .rightSide h1 {
+    font-size: 2em; /* Smaller title font size */
+  }
+
+  form {
+    max-width: 90%;
+    padding: 10px;
+  }
+
+  label {
+    font-size: 1em;
+  }
+
+  input,
+  textarea {
+    font-size: 0.9em;
+    padding: 8px;
+  }
+
+  button {
+    font-size: 1em;
+  }
+}

@@ -1,0 +1,71 @@
+/* Alap stílusok a menünek */
+.menu {
+    padding: 2rem;
+    background-color: #f8f9fa;
+    text-align: center;
+  }
+  
+  .menuTitle {
+    font-size: 2rem;
+    color: #d10300;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .menuList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+  }
+  
+  /* Stílusok az egyes menüpontokhoz */
+  .menuItem {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.2s ease;
+    width: 100%;
+    max-width: 300px;
+    text-align: left;
+  }
+  
+  .menuItem img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  
+  
+  .menuItem p {
+    font-size: 1.2rem;
+    color: #ff5c00;
+    margin: 0.5rem 1rem;
+    font-weight: bold;
+  }
+  
+  /* Hover effekt az egyes menüpontokhoz */
+  .menuItem:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Reszponzív beállítások */
+  @media (min-width: 768px) {
+    .menuList {
+      gap: 2rem;
+    }
+  
+    .menuItem {
+      width: calc(50% - 1rem); /* Két oszlop mobilon */
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .menuItem {
+      width: calc(33.333% - 1rem); /* Három oszlop tableten és nagyobb kijelzőkön */
+    }
+  }
+  

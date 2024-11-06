@@ -1,0 +1,50 @@
+.navbar {
+    padding: 0.5rem 1rem;
+    background-color: #f8f9fa; 
+    display: flex;
+    justify-content: space-evenly; /* A logó és a menüsor közötti távolság */
+}
+
+
+#logo {
+    height: 65px; 
+    margin-right: 1rem; /* Kisebb távolság a logó mellett */
+}
+
+
+.navbar-nav {
+    margin-left: auto; /* Menüsor jobbra igazítása */
+    display: flex;
+    align-items: center;
+}
+
+.nav-link {
+    margin: 0 0.5rem; 
+    color: #d10300 !important; 
+    font-weight: bold !important; 
+    text-transform: uppercase; 
+    text-decoration: none; 
+    font-size: large !important;
+}
+
+
+.nav-link:hover {
+    color: #b21500; 
+}
+
+
+
+
+@media (max-width: 768px) {
+    .navbar-nav {
+        flex-direction: column; 
+    }
+    
+    .nav-link {
+        padding: 0.5rem 1rem; 
+        text-align: center; 
+        border-bottom: 1px solid #e9ecef; 
+    }
+    
+   
+}
